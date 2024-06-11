@@ -1,0 +1,10 @@
+version: '2.15.1'
+
+services:
+  nextjsdocker:
+    image: nextjsdocker
+    build:
+      dockerfile: Dockerfile
+    container_name: nextjsdocker_container
+    ports:
+      - '3000:3000'
