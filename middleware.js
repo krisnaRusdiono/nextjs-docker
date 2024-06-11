@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 const middleware = (request) => {
     const cspHeader = `
     default-src 'self';
-    script-src 'self' 'unsafe-eval' https://replace-with-your-extrernal-script.com;
+    script-src 'self' https://replace-with-your-extrernal-script.com;
     style-src 'self' https://replace-with-your-external-style.com;
     img-src 'self' blob: data: https://replace-with-your-external-img.com;
     font-src 'self' https://replace-with-your-external-font.com;
